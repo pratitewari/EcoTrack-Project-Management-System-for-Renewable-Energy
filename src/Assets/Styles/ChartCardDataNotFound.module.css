@@ -1,0 +1,29 @@
+.parentDiv {
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 45vh;
+}
+
+.parentDivInsideChartCanvas {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1601px) {
+  .parentDiv {
+    height: 400px;
+  }
+}
+
+.noDataSpan {
+  color: rgba(168, 168, 168, 0.717);
+}

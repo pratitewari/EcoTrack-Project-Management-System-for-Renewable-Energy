@@ -1,0 +1,326 @@
+.login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    background-color: #f1f1f1 !important;
+  }
+  
+  .loginBox {
+    /* width: 1100px;
+    height: 550px; */
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    border: 1.8px solid #414e665c;
+    display: flex;
+    flex-direction: row-reverse; /*this is done to keep login card to right and image to left */
+  }
+  
+  .left {
+    /* background: linear-gradient(-45deg, #dcd7e0, #fff); */
+    background: white;
+    width: 35%;
+    height: 100%;
+    padding: 20px 25px;
+    /* overflow: auto; */
+    /* border-radius: 10px 0px 0px 10px; */
+    /* border-radius: 0px 10px 10px 0px; reversed this border radius as login card and image was interchanged */
+  }
+  .right {
+    width: 65%;
+    height: 100%;
+  
+    /* border-radius: 0px 10px 10px 0px; */
+    /* border-radius: 10px 0px 0px 10px; reversed this border radius as login card and image was interchanged */
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* width: 100%; */
+    /* margin-top: 5%; */
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+  }
+  
+  .loginFormParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoIcon {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .logoIcon span {
+    color: rgb(139, 139, 139);
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(139, 139, 139);
+  } */
+  
+  .left h3 {
+    margin-bottom: 0px !important;
+    /* margin-bottom: 40px; */
+  }
+  
+  .inputDiv {
+    padding: 10px 5px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    top: 31px;
+    padding-left: 13px;
+    color: #414e66;
+    font-size: 27px;
+  }
+  
+  .infoIcon {
+    position: absolute;
+    top: 33px;
+    right: 18px;
+    padding-top: 2px;
+    padding-left: 4px;
+    color: #414e66;
+    cursor: help;
+    font-size: 20px;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    top: 31px;
+    right: 18px;
+    padding-top: 2px;
+    padding-left: 4px;
+    color: #414e66;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .eyeIconWithInfo {
+    position: absolute;
+    top: 31px;
+    right: 45px;
+    padding-top: 2px;
+    padding-left: 4px;
+    color: #414e66;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .left input {
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #d4d3d3;
+    padding: 14px 9px;
+    padding-left: 35px;
+    color: #212529 !important;
+    background: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  
+  .left input:-webkit-autofill,
+  .left input:-webkit-autofill:hover,
+  .left input:-webkit-autofill:focus,
+  .left input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+  .left input:focus {
+    outline: none;
+  }
+  
+  .btnLogin {
+    /* display: inline-flex; */
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .actionBtn {
+    border: none;
+    /* width: 40%; */
+    padding: 12px 0;
+    padding: 12px 0px;
+    margin: 0px 20px;
+    flex: 1;
+    border-radius: 8px;
+    background: rgb(200, 47, 42);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 9px 15px -11px rgb(65 78 102);
+    -webkit-box-shadow: 0px 9px 15px -11px rgb(65 78 102);
+    -moz-box-shadow: 0px 9px 15px -11px rgb(65 78 102);
+    box-shadow: 0px 9px 15px -11px rgb(65 78 102);
+  }
+  
+  .actionBtn:hover {
+    background: rgb(172, 40, 36);
+  }
+  
+  .linkTwo {
+    /* margin-top: 3%; */
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .forgot {
+    font-size: 13px !important;
+    text-decoration: none;
+    color: #212529;
+  }
+  .forgot:hover {
+    cursor: pointer;
+    font-weight: 550;
+    color: #212529;
+  }
+  .line {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  
+  .right {
+    color: #fff;
+    background: linear-gradient(212.38deg, #f45250 0%, rgb(65 78 102 / 57%) 100%),
+      url("../Images/rightbgimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .right .rightText {
+    height: 100%;
+    position: relative;
+    transform: translate(0%, 45%);
+  } */
+  .rightText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rightText span {
+    display: block;
+    width: 80%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin: auto;
+  }
+  .rightText h5 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8%;
+    text-align: center;
+  }
+  .passwordError {
+    font-size: smaller;
+    color: red;
+    font-weight: 500;
+    text-align: left !important;
+  }
+  
+  /* .headingSpanForSmallScreen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .headingSpanForSmallScreen span {
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: auto;
+  } */
+  
+  @media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .rightText span {
+      font-size: 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .rightText span {
+      font-size: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .rightText span {
+      font-size: 30px;
+    }
+    .right {
+      display: none;
+    }
+    .left {
+      width: 100%;
+      background: linear-gradient(
+          212.38deg,
+          #f45250 0%,
+          rgb(65 78 102 / 57%) 100%
+        ),
+        url("../Images/rightbgimage.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .loginFormParent {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+    .loginForm {
+      width: 100%;
+    }
+    /* .headingSpanForSmallScreen {
+      display: flex;
+    } */
+  }
+  

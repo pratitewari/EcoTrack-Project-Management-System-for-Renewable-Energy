@@ -1,0 +1,140 @@
+.mainMenuUlTag {
+    /* position: fixed;
+    top: 71px; */
+    background-color: #9f2b2b;
+    width: 100%;
+    z-index: 6;
+  }
+  
+  .mainMenuDivTag {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* height: 100%; */
+    margin: 13px 0;
+    /* padding: 15px 0px; */
+  }
+  
+  .menuItem {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    /* text-align: left; */
+    border-radius: 8px;
+    /* margin-right: 20px; */
+    padding: 8px 8px;
+  }
+  
+  .menuItem:hover {
+    box-shadow: 7px 7px 7px -1px rgba(68, 68, 68, 0.494);
+    background-color: white;
+    color: black !important;
+  }
+  
+  .disabledMenuItem {
+    color: rgba(255, 255, 255, 0.656);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: not-allowed;
+    /* text-align: left; */
+    border-radius: 8px;
+    /* margin-right: 20px; */
+    padding: 8px 8px;
+  }
+  
+  .menubg,
+  .menubg:hover {
+    box-shadow: 7px 7px 7px -1px rgba(68, 68, 68, 0.494);
+  
+    background-color: white;
+    color: black !important;
+  }
+  
+  .dropdownMenuToggler {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 8px;
+    padding: 8px 8px;
+  }
+  
+  .dropdownMenuToggler:hover,
+  .dropdownMenuToggler[aria-expanded="true"],
+  .dropdownMenuToggler:active,
+  .dropdownMenuToggler:focus {
+    color: white !important;
+  }
+  
+  .menuDropdownDiv:has(.subMenuActive) .dropdownMenuToggler {
+    box-shadow: 7px 7px 7px -1px rgba(68, 68, 68, 0.494) !important;
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .dropdownArrowIcon {
+    font-size: 20px;
+  }
+  
+  .menuDropdown {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 10px !important;
+  }
+  
+  .menuDropdown a:hover {
+    background: transparent;
+  }
+  
+  .menuDropdown a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    margin: 3px 0px;
+    padding: 3px 10px;
+    cursor: default;
+    cursor: pointer;
+  }
+  
+  .menuDropdown a:hover,
+  .subMenuActive {
+    background-color: #9f2b2b;
+    color: white !important;
+    font-weight: 500 !important;
+    border-radius: 5px;
+  }
+  
+  .subMenuTextSpan {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .mainMenuDivTag {
+      margin: 5px 0;
+    }
+  
+    .menuItem,
+    .disabledMenuItem,
+    .dropdownMenuToggler {
+      padding: 5px 5px;
+    }
+  
+    .menuItem,
+    .disabledMenuItem,
+    .dropdownMenuToggler,
+    .menuDropdown a {
+      font-size: 1.2vw;
+    }
+  
+    .dropdownArrowIcon {
+      font-size: 1.2vw;
+    }
+  }
+  

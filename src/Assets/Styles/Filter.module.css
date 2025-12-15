@@ -1,0 +1,40 @@
+/* Filter Card code starts */
+.filterCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 13px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #b5cae2;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.filterCardIconsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterIcons {
+  font-size: 20px;
+  color: #0165e1;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.filterIconsDisabled {
+  color: #bdbebe;
+  cursor: not-allowed;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.buttonDiv button {
+  /* margin: 0 5px; */
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+/* Filter Card code ends */

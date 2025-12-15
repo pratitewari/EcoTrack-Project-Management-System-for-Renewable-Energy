@@ -1,0 +1,159 @@
+#navbarContainer {
+    /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px !important; */
+    width: 100%;
+    /* position: fixed;
+    top: 0; */
+    z-index: 7;
+    height: 55px;
+    padding: 0;
+    /* border-bottom: 2px solid #0165e1; */
+  }
+  
+  .colorBox {
+    height: 15px;
+    width: 15px;
+    padding: 0 !important;
+    border: none !important;
+  }
+  
+  #dots {
+    margin-right: 22px !important;
+  }
+  
+  #welcomeClass {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #accountDiv {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notificationIconSpan {
+    position: relative;
+  }
+  #notificationIcon {
+    color: #0165e1;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .bellIconNumber {
+    position: absolute;
+    right: -4px;
+    top: -5px;
+    padding: 8px 5px;
+    background-color: red;
+    color: white;
+    /* font-size: x-small; */
+    font-weight: 800;
+    border-radius: 50%;
+  }
+  
+  .ringingBell {
+    animation: ringBell 0.7s;
+  }
+  
+  @keyframes ringBell {
+    25% {
+      rotate: -30deg;
+      transform: scale(1.2);
+    }
+    50% {
+      rotate: 30deg;
+    }
+    70% {
+      rotate: -15deg;
+      transform: scale(1.1);
+    }
+    90% {
+      rotate: 15deg;
+    }
+    100% {
+      rotate: 0deg;
+      transform: scale(1);
+    }
+  }
+  
+  #notificationDropdown {
+    max-height: 60vh;
+    width: 27vw !important;
+    max-width: 27vw !important;
+    /* max-width: 30vw !important; */
+    overflow: auto;
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    word-wrap: break-word;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .seperator {
+    margin: 0 7px;
+    color: #6f82937a;
+  }
+  
+  .notificationListActionBtn {
+    width: max-content;
+    text-align: end;
+    font-style: italic;
+    padding: 0;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .notificationListActionBtn:hover {
+    text-decoration: underline;
+  }
+  
+  .notificationListHeadings {
+    font-weight: 700;
+  }
+  
+  #userIcon {
+    color: #0165e1;
+    font-size: 40px;
+  }
+  #dropdownArrowIcon {
+    color: #0165e1;
+    width: 20px;
+    font-size: 25px;
+  }
+  #headName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #494a4a;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  #profileDetailsDropdown {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  #profileDetails li {
+    font-family: poppins !important;
+  }
+  
+  #profileDetails:hover,
+  #profileDetails:active,
+  #profileDetails:focus {
+    background-color: transparent;
+    cursor: default;
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    #headName {
+      font-size: 1.2vw;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #welcomeClass {
+      display: none;
+    }
+  }
+  
